@@ -1,0 +1,11 @@
+{{ define "masthead" }}
+{{ end }}
+{{define "main"}}
+<section class="of-docs-list">
+    {{ .Content }}
+{{ range .Pages }}
+    <a href="{{ .URL}}">{{ .Title }}</a>
+{{ end }}    
+</section>
+
+{{end}}
