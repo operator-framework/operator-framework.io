@@ -234,7 +234,9 @@ ol {
         }
         .of-section--largetext__content {
             grid-area: content;
+            @media (min-width: $ov--breakpoint--lg) {
             max-width: 550px;
+            }
         }
         .of-button {
             grid-area: action;
