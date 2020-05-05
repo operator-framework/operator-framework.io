@@ -2,8 +2,8 @@
 <section class="of-masthead of-masthead--home">
   <h1 class="of-heading of-masthead--home__title"><span>Operator</span><span>Framework</span></h1>
   <h2 class="of-heading of-heading--md of-masthead--home__content">The Operator Framework is an open source toolkit to manage Kubernetes native applications, called Operators, in an effective, automated, and scalable way.</h2>
-  <a href="" class="of-button of-button--primary of-masthead--home__action1">What is an Operator?</a>
-  <a href="" class="of-button of-button--secondary of-masthead--home__action2" aria-label="how can I build an operator">How can I build one?</a>
+  <a href="/what" class="of-button of-button--primary of-masthead--home__action1">What is an Operator?</a>
+  <a href="#" class="of-button of-button--secondary of-masthead--home__action2" aria-label="how can I build an operator">How can I build one?</a>
 </section>
 {{ end }}
 {{ define "main" }}
@@ -53,12 +53,12 @@
     </div>
   </section>
   <section class="of-section of-section-whats-operator">
-    <aside class="of-section-whats-operator__video">Video here</aside> 
+    <aside class="of-section-whats-operator__video"></aside> 
    <div class="of-section-whats-operator__content">
     <h2 class="of-heading of-heading--lg">What is an Operator?</h2>
     <p>The goal of an Operator is to put operational knowledge into software. Previously this knowledge only resided in the minds of administrators, various combinations of shell scripts or automation software like Ansible. It was outside of your Kubernetes cluster and hard to integrate. With Operators, CoreOS changed that.</p>
     <p>Operators implement and automate common Day-1 (installation, configuration, etc) and Day-2 (re-configuration, update, backup, failover, restore, etc.) activities in a piece of software running inside your Kubernetes cluster, by integrating natively with Kubernetes concepts and APIs. We call this a Kubernetes-native application. With Operators you can stop treating an application as a collectionof primitives like Pods, Deployments, Services or ConfigMaps, but instead as a single object that only exposes the knobs that make sense for the application.</p>
-    <a href="#" class="of-button of-button--tertiary">
+    <a href="/about" class="of-button of-button--tertiary">
       Learn more about Operators
       <svg class="of-button__icon" enable-background="new 0 0 22 22" version="1.1" viewBox="0 0 22 22" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
         <path d="M19.5,8l-7.3-7.6c-0.4-0.4-1.1-0.4-1.5,0L9.3,1.8c-0.4,0.4-0.4,1.1,0,1.6l5.2,5.5H1.1C0.5,8.9,0,9.3,0,10V12  c0,0.6,0.5,1.1,1.1,1.1h13.5l-5.2,5.5c-0.4,0.4-0.4,1.1,0,1.6l1.4,1.5c0.4,0.4,1.1,0.4,1.5,0l9.4-9.9c0.4-0.4,0.4-1.1,0-1.6L19.5,8z  "/>
@@ -92,7 +92,7 @@ height="18px" viewBox="0 0 26 18" style="enable-background:new 0 0 26 18;" xml:s
 </svg>
     </header>
     
-    <p class="of-section__contribute__content">The Operator Framework and its components are open source, so please feel encouraged to jump into each individually and learn what else you can do. If you want to discuss your experience, have questions, or want toget involved, join the <a href="" class="of-link of-link--inline">Operator Framework mailing list</a> and visit us on <a href="" class="of-link of-link--inline">GitHub</a>.</p>
+    <p class="of-section__contribute__content">The Operator Framework and its components are open source, so please feel encouraged to jump into each individually and learn what else you can do. If you want to discuss your experience, have questions, or want toget involved, join the <a href="https://groups.google.com/forum/#!forum/operator-framework" class="of-link of-link--inline">Operator Framework forum</a> and visit us on <a href="https://github.com/operator-framework" class="of-link of-link--inline">GitHub</a>.</p>
   </section>
 
 {{ end }}
