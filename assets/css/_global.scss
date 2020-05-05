@@ -153,10 +153,13 @@ ol {
 }
 
 .of-section--largetext {
-    margin: var(--of--spacer--lg);
+    padding: var(--of--spacer--lg);
+    max-width: 1200px;
     @media (min-width: $ov--breakpoint--lg) { 
-    margin: var(--of--spacer--2xl) var(--of--spacer--3xl);
+    padding: var(--of--spacer--2xl) var(--of--spacer--3xl);
+    margin: 0 auto;
     }
+
     .of-heading {
         text-transform: uppercase;
         color: var(--of--color-brand--200);
