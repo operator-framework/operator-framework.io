@@ -191,7 +191,6 @@ c-0.5,0-0.6-0.2-0.6-0.6C125.1,45.8,125.1,42.7,125.1,39.6z"/>
 c0,4.7,0,9.4,0,14.1c0,0.6,0.1,0.8,0.8,0.8c2.1,0,4.1,0,6.2,0c0.5,0,0.7,0.1,0.6,0.6c0,1,0,2.1,0,3.1c0,0.4-0.1,0.6-0.6,0.6
 c-3.9,0-7.8,0-11.7,0c-0.5,0-0.6-0.2-0.6-0.6C142.4,45.8,142.4,42.7,142.4,39.6z"/>
 </svg>
-<p>text here</p>
 <h3 class="of-heading of-heading-md">Terminology</h3>
 <ul>
     <li><strong>Operator</strong> - the custom controller installed on a Kubernetes cluster</li>
@@ -232,7 +231,7 @@ c-3.9,0-7.8,0-11.7,0c-0.5,0-0.6-0.2-0.6-0.6C142.4,45.8,142.4,42.7,142.4,39.6z"/>
                     </ul>
                 </td>
                 <td data-label="Example">
-                    <p>An Operator, managing a database, offers increasing the capacity of the database by resizing the underlying PersistentVolumeClaim based on changes the databases Custom Resource instance.</p>
+                    <p>An Operator, managing a database, can increase the capacity of the database by resizing the underlying PersistentVolumeClaim based on changes the databases Custom Resource instance.</p>
                 </td>
               </tr>
             </tbody>
@@ -241,10 +240,10 @@ c-3.9,0-7.8,0-11.7,0c-0.5,0-0.6-0.2-0.6-0.6C142.4,45.8,142.4,42.7,142.4,39.6z"/>
           <ol class="of-ordered-list">
               <li>What installation configuration can be set in the CR?</li>
               <li>What additional installation configuration could still be added?</li>
-              <li>Can you set operand configuration in the CR? If so, what configuration is supported for each operand?</li>
+              <li>Can you set Operand configuration in the CR? If so, what configuration is supported for each Operand?</li>
               <li>Does the managed application / workload get updated in a non-disruptive fashion when the configuration of the CR is changed?</li>
               <li>Does the status of the CR reflect that configuration changes are currently applied?</li>
-              <li>What additional operand configuration could still be added?</li>
+              <li>What additional Operand configuration could still be added?</li>
               <li>Do all of the instantiated CRs include a status block? If so, does it provide enough insight to the user about the application state?</li>
               <li>Do all of your CRs have documentation listing valid values and mandatory fields?</li>	
           </ol>
@@ -289,7 +288,7 @@ c-3.9,0-7.8,0-11.7,0c-0.5,0-0.6-0.2-0.6-0.6C142.4,45.8,142.4,42.7,142.4,39.6z"/>
       <ol class="of-ordered-list">
           <li>Can your Operator upgrade your Operand?</li>
           <li>Does your Operator upgrade your Operand during updates of the Operator?</li>
-          <li>Can your Operator manage older Operand version versions?</li>
+          <li>Can your Operator manage older Operand versions?</li>
           <li>Is the Operand upgrade potentially disruptive?</li>
           <li>If there is downtime during an upgrade, does the Operator convey this in the status of the CR?</li>	
       </ol>
@@ -307,14 +306,14 @@ c-3.9,0-7.8,0-11.7,0c-0.5,0-0.6-0.2-0.6-0.6C142.4,45.8,142.4,42.7,142.4,39.6z"/>
         <tbody>
           <tr>
             <td data-label="Feature">
-                <p><strong>Operator provides the ability to create backups of the Operand</strong></p>
-                <p><strong>Operator is able to restore a backup of an Operand</strong></p>
-                <p><strong>Operator orchestrates complex re-configuration flows on the Operand</strong></p>
-                <p><strong>Operator implements fail-over and fail-back of clustered Operands</strong></p>
-                <p><strong>Operator supports add/removing members to a clustered Operand</strong></p>
-                <p><strong>Operator enables application-aware scaling of the Operand</strong></p>
+                <p><strong>Ability to create backups of the Operand</strong></p>
+                <p><strong>Ability to restore a backup of an Operand</strong></p>
+                <p><strong>Orchestration of complex re-configuration flows on the Operand</strong></p>
+                <p><strong>Implementation of fail-over and fail-back of clustered Operands</strong></p>
+                <p><strong>Support for adding/removing members to a clustered Operand</strong></p>
+                <p><strong>Enabling application-aware scaling of the Operand</strong></p>
             </td>
-            <td data-label="Example"><p>An Operator managing a database provides the ability to create an application consistent backup of the data by flushing the database log and quiescing the write activity to the database files.</p></td>
+            <td data-label="Example"><p>An Operator managing a database provides the ability to create an application-consistent backup of the data by flushing the database log and quiescing the write activity to the database files.</p></td>
           </tr>
           
         </tbody>
@@ -330,6 +329,7 @@ c-3.9,0-7.8,0-11.7,0c-0.5,0-0.6-0.2-0.6-0.6C142.4,45.8,142.4,42.7,142.4,39.6z"/>
     </div>  
     <div class="of-capability-level__item of-section-separator">
         <h3 class="of-heading of-heading--xl">Level &#8547;: Deep insights</h3>
+    <p>The Operator offers one or more of the following deep insights features:</p>
     <table class="of-capability-level__table of-capability-level__table__level-4">
         <thead>
           <tr>
@@ -343,7 +343,7 @@ c-3.9,0-7.8,0-11.7,0c-0.5,0-0.6-0.2-0.6-0.6C142.4,45.8,142.4,42.7,142.4,39.6z"/>
                 
                 <h4 class="of-heading of-heading--sm">Monitoring</h4>
                 <ul class="of-list">
-                <li>Operator exposing metrics about its health</li>
+                <li>Operator exposes metrics about its own health</li>
                 <li>Operator exposes health and performance metrics about the Operand</li>
                 </ul>
                 <h4 class="of-heading of-heading--sm">Alerting and Events</h4>
@@ -426,7 +426,7 @@ c-3.9,0-7.8,0-11.7,0c-0.5,0-0.6-0.2-0.6-0.6C142.4,45.8,142.4,42.7,142.4,39.6z"/>
       <ol class="of-ordered-list">
         <li>Can your Operator read metrics such as requests per second or other relevant metrics and auto-scale horizontally or vertically, i.e., increasing the number of pods or resources used by pods?</li>
         <li>Based on question number 1 can it scale down or decrease the number of pods or the total amount of resources used by pods?</li>
-        <li>Based on the deep insights built upon level 4 capabilities can your Operator determine when an operand became unhealthy and take action such as redeploying, changing configurations, restoring backups etc.?</li>
+        <li>Based on the deep insights built upon level 4 capabilities can your Operator determine when an Operand became unhealthy and take action such as redeploying, changing configurations, restoring backups etc.?</li>
         <li>Again considering that with level 4 deep insights the Operator has information to learn the performance baseline dynamically and can learn the best configurations for peak performance can it adjust the configurations to do so?</li>
         <li>Can it move the workloads to better nodes, storage or networks to do so?</li>
         <li>Can it detect and alert when anything is working below the learned performance baseline that can’t be corrected automatically?</li>
