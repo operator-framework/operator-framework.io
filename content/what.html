@@ -11,15 +11,15 @@ menu:
     <aside class="of-section-whats-operator__video"></aside>
    <div class="of-section-whats-operator__content">
     <h2 class="of-heading of-heading--md">What is an Operator?</h2>
-    <p>Operators put operational knowledge into software. An Operator is a method of packaging, deploying, and managing a Kubernetes application.
-Operators automate common operations, such as installation, configuration, update, and backup. These activities run inside your Kubernetes cluster and integrate with Kubernetes APIs.
-We call this a Kubernetes-native application. A Kubernetes-native application is more than a collection of Pods, Deployments, and ConfigMaps. Operators are a single object that only exposes the parts that make sense for the application.</p>
+    <p>Operators put operational knowledge into software. An Operator is a method of packaging, deploying, and managing a Kubernetes application.</p>
+    <p>Operators automate common Day 1 and Day 2 operations, such as installing, configuring, updating, and backing up (noun?). These activities run inside your Kubernetes cluster and integrate with the Kubernetes APIs.</p>
+    <p>An Operator is more than a collection of Pods, Deployments, and ConfigMaps. An Operator is a Kubernetes-native application: a single object that only exposes the ports that make sense for the application.</p>
    </div>
   </section>
 <section class="of-section--largetext">
     <div class="of-section--largetext__item">
         <h2 class="of-heading of-heading--xl">Who builds Operators?</h2>
-        <p class="of-section--largetext__content">Cluster Admins, Site Reliability Engineers, Software Engineers, and DevOps Engineers put their shared operational knowledge into an Operator. Their efforts create a resilient and robust solution that manages an application in a native Kubernetes way. Operators are available everywhere that OLM is installed.</p>
+        <p class="of-section--largetext__content">Cluster Admins, Site Reliability Engineers, Software Engineers, and DevOps Engineers put their shared operational knowledge into an Operator. Their efforts create a resilient and robust solution that manages an application the Kubernetes-native way. Operators are available everywhere that Operator Lifecycle Manager (OLM) is installed.</p>
         <a href="https://sdk.operatorframework.io/" class="of-button of-button--tertiary">Go to Operator SDK
           <svg class="of-button__icon" enable-background="new 0 0 22 22" version="1.1" viewBox="0 0 22 22" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
               <path d="M19.5,8l-7.3-7.6c-0.4-0.4-1.1-0.4-1.5,0L9.3,1.8c-0.4,0.4-0.4,1.1,0,1.6l5.2,5.5H1.1C0.5,8.9,0,9.3,0,10V12  c0,0.6,0.5,1.1,1.1,1.1h13.5l-5.2,5.5c-0.4,0.4-0.4,1.1,0,1.6l1.4,1.5c0.4,0.4,1.1,0.4,1.5,0l9.4-9.9c0.4-0.4,0.4-1.1,0-1.6L19.5,8z  "/>
@@ -31,7 +31,7 @@ We call this a Kubernetes-native application. A Kubernetes-native application is
     </div>
     <div class="of-section--largetext__item">
       <h2 class="of-heading of-heading--xl">Who uses Operators?</h2>
-      <p class="of-section--largetext__content">Cluster Admins extend the Kubernetes API by installing an Operator. Kubernetes users with the appropriate RBAC can interact with the Operator's APIs. End Users can interact with the applications installed by the Operator.</p>
+      <p class="of-section--largetext__content">Cluster administrators extend the Kubernetes API by installing an Operator. Kubernetes users with the appropriate role-based access control (RBAC) can interact with Operator APIs. End users can use the applications installed by the Operator.</p>
       <a href="https://www.operatorhub.io" class="of-button of-button--tertiary">Go to OperatorHub.io
           <svg class="of-button__icon" enable-background="new 0 0 22 22" version="1.1" viewBox="0 0 22 22" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
               <path d="M19.5,8l-7.3-7.6c-0.4-0.4-1.1-0.4-1.5,0L9.3,1.8c-0.4,0.4-0.4,1.1,0,1.6l5.2,5.5H1.1C0.5,8.9,0,9.3,0,10V12  c0,0.6,0.5,1.1,1.1,1.1h13.5l-5.2,5.5c-0.4,0.4-0.4,1.1,0,1.6l1.4,1.5c0.4,0.4,1.1,0.4,1.5,0l9.4-9.9c0.4-0.4,0.4-1.1,0-1.6L19.5,8z  "/>
@@ -71,7 +71,7 @@ We call this a Kubernetes-native application. A Kubernetes-native application is
             <p>Horizontal and vertical scaling, automatic configuration tuning, abnormal detection, scheduling tuning</p>
         </li>
     </ul>
-    <p>Operators come in different maturity levels based on their lifecycle management capabilities for the application or workload they deliver. The capability model provides consistent terminology to help users understand what features they can expect from an Operator.</p>
+    <p>Operators have different maturity levels based on their lifecycle management capabilities and the application or workload they deliver. The capability model provides consistent terms to help users understand what features to expect from an Operator.</p>
     <a class="of-button of-button--tertiary" href="/operator-capabilities/">Learn more about the capability model
         <svg class="of-button__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px"
         height="22px" viewBox="0 0 22 22" style="enable-background:new 0 0 22 22;" xml:space="preserve">
